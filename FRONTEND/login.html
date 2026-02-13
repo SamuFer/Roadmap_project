@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGA Studio - Login</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Iconos opcionales (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Formulario de Acceso (Añadir debajo del Hero o en una página aparte) -->
+    <section class="auth-section container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <div class="auth-logo">
+                    <i data-lucide="rocket"></i>
+                </div>
+                <h1>Bienvenido</h1>
+                <p>Inicia sesión o regístrate en SGA Studio</p>
+            </div>
+    
+            <form class="auth-form">
+                <!-- Nombre (Opcional para registro) -->
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" placeholder="Samuel o Alejandro" class="input">
+                </div>
+    
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="tu@email.com" required class="input">
+                </div>
+    
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" placeholder="••••••••" required minlength="6" class="input">
+                </div>
+    
+                <button type="submit" class="btn btn-primary btn-full" disabled>
+                    Continuar
+                </button>
+            </form>
+    
+            <p class="auth-footer">
+                ¿Primera vez? <a href="#" class="auth-link disabled-link">Crear cuenta</a>
+            </p>
+            <p class="auth-footer">
+                <a href="index.html" class="auth-link ">Volver a inicio</a>
+            </p>
+        </div>
+    </section>
+    <script>
+        // Esto solo es para cargar los iconos
+        lucide.createIcons();
+    </script>
+</body>
+</html>
